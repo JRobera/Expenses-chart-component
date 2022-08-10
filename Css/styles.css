@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    background-color: hsl(27, 66%, 92%);
+}
+main {
+    width: 90%;
+    margin: 80px auto;
+}
+
+.balanceandlogo {
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 10px;
+    display: flex;
+    padding: 20px;
+}
+.balance {
+    flex: 1;
+}
+.balance:nth-child(1){
+    color: white;
+}
+.bmoney {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin-top: 5px;
+}
+
+.info {
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 15px;
+    padding: 15px;
+}
+h2 {
+    padding: 5px 0 0 5px;
+}
+.statictics {
+    display: flex;
+    height: 250px;
+}
+.barcon {
+    position: relative;
+    flex: 1;
+    height: 210px;
+}
+.barcon .amount {
+    display: none;
+    position: absolute;
+    color: white;
+    font-size: 11px;
+    padding: 5px;
+    bottom: 148px;
+    border-radius: 5px;
+    background-color: black;
+}
+#amomon {bottom: 42px;}
+#mon:hover~#amomon {display: block;}
+
+#amotue {bottom: 90px;}
+#tue:hover~#amotue {display: block;}
+
+/* #amowed {} */
+#wed:hover~#amowed {display: block;}
+
+#amothu {bottom: 79px;}
+#thu:hover~#amothu {display: block;}
+
+#amofri {bottom: 54px;}
+#fri:hover~#amofri {display: block;}
+
+#amosat {bottom: 115px;}
+#sat:hover~#amosat {display: block;}
+
+#amosun {bottom: 62px;}
+#sun:hover~#amosun {display: block;}
+
+.bar {
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 33px;
+    height: 50px;
+    background: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    margin: auto;
+}
+.bar:hover {
+    background-color: hsla(10, 79%, 65%, 0.8);
+}
+.bar:hover#wed { background-color: hsla(186, 34%, 60%, 0.8);}
+.barcon > span {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, .4);
+}
+#mon {height: 52px;}
+#tue {height: 100px;}
+#wed {background-color: hsl(186, 34%, 60%); height: 158px;}
+#thu {height: 90px;}
+#fri {height: 65px;}
+#sat {height: 125px;}
+#sun {height: 73px;}
+hr {
+    width: 96%; 
+    margin: 25px auto;
+    border: none;
+    border-radius: 5px;
+    height: 3px;
+    background-color: hsl(27, 66%, 92%);
+}
+.lowerdata {
+    display: flex;
+}
+.monthuse {
+    flex: 1;
+}
+.monthuse p , .lowerdata div:nth-child(2) p {
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, .4);
+}
+.monthuse h3 {
+    font-size: 31px;
+}
+.lowerdata div:nth-child(2){
+    text-align: right;
+    position: relative;
+    top: 27px;
+}
+@media (min-width: 375px){
+    main { width: 30%;}
+    h2 {font-size: 25px;}
+    .bar { width: 40px;}
+}
